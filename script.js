@@ -7,9 +7,10 @@ function addTodo(){
 
     document.querySelector("body").appendChild(newDiv);
     //Append span and btn to newDiv
-    newSpan.innerText = inpText
+    newSpan.innerText = `${ctr}. ${inpText}`
     newBtn.innerText = "Delete"
     newDiv.appendChild(newSpan)
     newDiv.appendChild(newBtn)
-    
+    ctr++;
 }
+
