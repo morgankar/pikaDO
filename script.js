@@ -1,4 +1,4 @@
-let ctr = 1
+
 // function addTodo(){
 //     const inpText = document.getElementById("input").value
 //     const newDiv = document.createElement("div");
@@ -32,24 +32,25 @@ function addTodo(){
     render()
 }
 
-function deleteTodo(){
+function deleteTodo(ctr){
+    todos.splice(ctr -1,1)
     render()
 }
 
 function render(){
+    let ctr = 1
     document.getElementById("todoCard").innerHTML ="";
     for(let i=0;i <todos.length ;i++){
         const newSpan= document.createElement("span")
         const newBtn = document.createElement("button")
         const newDiv = document.createElement("div");
+        newDiv.setAttribute("id",`todo-${ctr}`)
         newSpan.innerText = todos[i].title
         newBtn.innerText = "Delete"
         document.getElementById("todoCard").appendChild(newDiv);
         newDiv.appendChild(newSpan)
         newDiv.appendChild(newBtn)
-        
+        newBtn.setAttribute("onclick",`deleteTodo(${ctr})`)
+        ctr++
     }
-    
-  
-    
 }
