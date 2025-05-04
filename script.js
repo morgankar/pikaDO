@@ -45,6 +45,7 @@ function render(){
         const newBtn = document.createElement("button")
         const newDiv = document.createElement("div");
         newDiv.setAttribute("id",`todo-${ctr}`)
+        newDiv.setAttribute("class","todoitem")
         newSpan.innerText = todos[i].title
         newBtn.innerText = "Delete"
         document.getElementById("todoCard").appendChild(newDiv);
