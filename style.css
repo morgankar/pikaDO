@@ -38,11 +38,18 @@ body{
 input{
     font-size:large;
     width : 300px;
+    height: 40px;
     
 }
 
 button{
     font-size: large;
     width: 100px;
+    height: 40px;
     
+}
+
+#addBtn{
+    background-color: rgb(255, 133, 2);
+    border: none;
 }
