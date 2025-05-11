@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/morgankar/pikaDO/issues"
   },
-  "homepage": "https://github.com/morgankar/pikaDO#readme"
+  "homepage": "https://github.com/morgankar/pikaDO#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
